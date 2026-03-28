@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("/assets/fonts/PlayfairDisplay.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/assets/fonts/DMSans.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 96.2 1.1 78.5;
+    --foreground: 16 0.5 260;
+    --card: 97.5 0.6 78.5;
+    --card-foreground: 16 0.5 260;
+    --popover: 97.5 0.6 78.5;
+    --popover-foreground: 16 0.5 260;
+    --primary: 16 0.5 260;
+    --primary-foreground: 97.5 0.6 78.5;
+    --secondary: 93 1.8 80;
+    --secondary-foreground: 16 0.5 260;
+    --muted: 90 0.8 78;
+    --muted-foreground: 48 0.4 250;
+    --accent: 93 1.8 80;
+    --accent-foreground: 16 0.5 260;
+    --destructive: 50 0.22 27;
+    --destructive-foreground: 97.5 0.6 78.5;
+    --border: 85 0.5 260;
+    --input: 85 0.5 260;
+    --ring: 16 0.5 260;
+    --radius: 0.25rem;
+    --navy: 22 4 240;
+    --whatsapp: 73 0.2 155;
+    --cta: 93 1.8 80;
+    --hero-text: 97 0.5 78;
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "DMSans", "Inter", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
